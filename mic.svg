@@ -1,48 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="miku.png">
-    <title>UwU</title>
-</head>
-<body>
-    <div class="container">
-        <div class="game">
-            <h1>Devinez le nombre (0 - 100)</h1>
-
-            <div class="row">
-                <label for="difficulty">Difficulté :</label>
-                <select id="difficulty">
-                    <option value="3">Difficile — 3 tentatives</option>
-                    <option value="5">Normal — 5 tentatives</option>
-                    <option value="10" selected>Facile — 10 tentatives</option>
-                </select>
-            </div>
-
-            <div class="row">
-                <input id="guessInput" type="number" min="0" max="100" placeholder="Entrez un nombre" />
-                <button id="guessBtn">Proposer</button>
-            </div>
-
-            <div class="row-reset">
-                <button id="resetBtn">Nouvelle partie</button>
-            </div>
-
-            <p id="attempts">Tentatives restantes : <span id="attemptsLeft">10</span></p>
-
-            <div id="feedback" class="feedback">Bonne chance</div>
-            <div id="hotCold" class="hotcold"></div>
-
-            <div class="history">
-                <h3>Propositions</h3>
-                <ul id="historyList"></ul>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
-</html>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff79c6"/>
+      <stop offset="1" stop-color="#00f0ff"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="2" width="8" height="12" rx="4" fill="url(#g)" opacity="0.95" />
+  <rect x="9.5" y="14" width="5" height="1.6" rx="0.8" fill="#222" />
+  <path d="M12 17 v3" stroke="#222" stroke-width="1.6" stroke-linecap="round" />
+  <circle cx="12" cy="21" r="1.2" fill="#222" />
+</svg>
